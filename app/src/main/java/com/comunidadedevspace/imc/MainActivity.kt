@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                     Snackbar.LENGTH_LONG
                 )
                     .show()
-
             } else {
 
                 val peso = PesoStr.toFloat()
