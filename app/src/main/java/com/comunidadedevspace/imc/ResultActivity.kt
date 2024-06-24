@@ -31,7 +31,7 @@ class ResultActivity : AppCompatActivity() {
             } else{
                 "OBESIDADEE GRAVE"
             }
-            tvClassificacao.text = classificacao
+            tvClassificacao.text= classificacao
 
 
 
