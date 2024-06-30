@@ -8,17 +8,17 @@ This project is a Native Android application developed with the Kotlin language,
 
 ## Tecnologias
 
--Activity
--Intent
--Snackbar
--ViewGroups
-  -LinearLayout
-  -ConstraintLayout
--Views
-  -ImageView
-  -TextView
-  -EditText
-  -Button
+- Activity
+- Intent
+- Snackbar
+- ViewGroups
+  - LinearLayout
+  - ConstraintLayout
+- Views
+  - ImageView
+  - TextView
+  - EditText
+  - Button
 
 
 ## License
