@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Calculadora IMC"
+            android:text="BMI Calculator"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -42,7 +42,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="48dp"
-            android:text="Preencha todos os campos do IMC"
+            android:text="Fill in all BMI fields"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Calcular"
+        android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/ic_weight"
-            android:hint="Digite seu peso aqui ex:70.20"
+            android:hint="Enter your weight here ex:70.20"
             android:inputType="numberDecimal"
             android:maxLength="6" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/ic_height"
-            android:hint="Digite sua altura aqui"
+            android:hint="Enter your height here"
             android:inputType="numberDecimal"
             android:maxLength="4" />
     </com.google.android.material.textfield.TextInputLayout>

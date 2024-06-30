@@ -15,7 +15,11 @@
         android:layout_width="411dp"
         android:layout_height="274dp"
         android:background="@drawable/gradient_bg"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="48dp"
@@ -30,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Calculadora IMC"
+            android:text="BMI Calculator"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -41,7 +45,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:text="Confirme abaixo seu resultado e classificacao"
+            android:text="Confirm your result and classification below"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -67,7 +71,7 @@
         android:layout_marginTop="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A Classificao do seu IMC é :" />
+        android:text="Your BMI classification is:" />
 
     <TextView
         android:id="@+id/tv_Classificao"

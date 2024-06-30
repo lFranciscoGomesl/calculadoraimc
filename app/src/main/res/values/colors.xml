@@ -5,5 +5,11 @@
     
     <color name="primaryj400">#cd00ea</color>
     <color name="primary_900">#5c00d2</color>
+    <color name="Magreza">#ff0000</color>
+    <color name="Normal">#00FF00</color>
+    <color name="Sobrepeso">#FFA500</color>
+    <color name="Obesidade">#FF4500</color>
+    <color name="ObesidadeGrave">#FF6347</color>
+
 
 </resources>

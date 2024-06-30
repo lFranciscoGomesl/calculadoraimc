@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             if (PesoStr == "" || AlturaStr == "") {
                 Snackbar.make(
-                    edtPeso,"Prencha todos os campos" ,
+                    edtPeso,"Fill in all fields" ,
                     Snackbar.LENGTH_LONG
                 )
                     .show()

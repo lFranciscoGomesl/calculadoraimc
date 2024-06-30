@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -20,19 +21,26 @@ class ResultActivity : AppCompatActivity() {
             val tvClassificacao = findViewById<TextView>(R.id.tv_Classificao)
             tvResult.text = result.toString()
 
-            var classificacao : String? =  if (result<=18.5f){
-                "MAGREZA"
-            } else if (result >18.5f && result<=24.9f){
-                "NORMAL"
-            } else if (result > 25f && result<=29.9f){
-                "SOBREPESO"
-            } else if (result >30f && result<=39.9f){
-                "OBESIDADE"
-            } else{
-                "OBESIDADEE GRAVE"
+            var (classificacao : String , color :Int ) = when { result <= 18.5 -> {
+                "UNDER THE WEIGHT" to R.color.Magreza
             }
+                result > 18.5f && result <= 24.9f -> {
+                    "NORMAL" to R.color.Normal
+                }
+                result > 25f && result <= 29.9f -> {
+                    "OVERWEIGHT" to R.color.Sobrepeso
+                }
+                result > 30f && result <= 39.9f -> {
+                    "OBESITY 1" to R.color.Obesidade
+                }
+                else ->{
+                    "OBESITY 2" to R.color.ObesidadeGrave
+                }
+            }
+            tvClassificacao.setTextColor(ContextCompat.getColor(this ,color))
             tvClassificacao.text= classificacao
 
+1
 
 
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
